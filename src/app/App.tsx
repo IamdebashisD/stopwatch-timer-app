@@ -13,7 +13,9 @@ export default function App() {
         <div className="min-h-screen bg-background flex flex-col items-center">
             
             <div className="">
-                <h1 className="font-mono text-[0.6rem] tracking-[0.35em] text-muted-foreground uppercase">Stopwatch Timer App</h1>
+                <h1 className="font-mono text-[0.6rem] tracking-[0.35em] text-muted-foreground uppercase">
+                    Stopwatch Timer
+                </h1>
             </div>
 
             <div  className="w-full max-w-md min-h-screen flex flex-col">

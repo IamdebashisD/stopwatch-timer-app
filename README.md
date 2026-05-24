@@ -1,3 +1,119 @@
+# Stopwatch & Timer App
+
+A minimal and clean Stopwatch + Timer application built with:
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+
+---
+
+## Features
+
+### Stopwatch
+
+* Start
+* Pause
+* Reset
+* Lap tracking
+* Accurate millisecond timing
+
+### Timer
+
+* Custom time input
+* Start / Pause / Reset
+* Countdown functionality
+
+---
+
+## Tech Stack
+
+* React 19 
+* TypeScript 
+* Vite 
+* Tailwind CSS 
+* ESLint 
+* Prettier
+
+---
+
+## Installation
+
+Clone the repository and install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Project Structure
+
+```bash
+src/
+ ├── components/
+ ├── hooks/
+ ├── types/
+ ├── utils/
+ ├── App.tsx
+ └── main.tsx
+```
+
+---
+
+## Scripts
+
+| Command           | Description              |
+| ----------------- | ------------------------ |
+| `npm run dev`     | Start development server |
+| `npm run build`   | Create production build  |
+| `npm run preview` | Preview production build |
+| `npm run lint`    | Run ESLint               |
+
+---
+
+## ESLint
+
+Project uses modern ESLint flat config with TypeScript support. 
+
+---
+
+## Formatting
+
+Prettier is used for automatic formatting and semicolon management.
+
+---
+
+## Ignore Files
+
+Common files like `node_modules`, logs, and build folders are ignored using `.gitignore`. 
+
+---
+
+## License
+
+This project is open source and available for learning and practice.
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

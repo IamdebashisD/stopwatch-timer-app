@@ -1,4 +1,7 @@
+import { useEffect, useRef } from "react";
 import { useTimer } from "../../hooks/useTimer";
+import { toast } from "sonner";
+import { playBell } from "../../utils/sound";
 import { formatTimer } from "../../utils/time";
 import { Button } from "../ui/Button";
 import { ProgressRing } from "./ProgressRing";
@@ -18,6 +21,19 @@ export function Timer() {
 
 
     const progress = totalMs > 0 ? (remainingMs / totalMs) : 0
+
+    const prevFinished = useRef(isFinished)
+    useEffect(() => {
+        if (isFinished && !prevFinished.current) {
+            playBell()
+            toast('Timer complete', {
+                description: 'Your countdown has ended', 
+                duration: 6000,
+                icon: '⏰✅'
+            })
+        }
+        prevFinished.current = isFinished
+    }, [isFinished])
 
     if (totalMs === 0) {
         return <TimerSetup onSet={setDuration} />

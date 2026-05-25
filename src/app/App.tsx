@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Toaster } from "sonner"
 import { TabBar } from "../components/ui/TabBar"
 import { Stopwatch } from "../components/stopwatch/Stopwatch"
 import { Timer } from "../components/timer/Timer"
@@ -49,6 +50,23 @@ export default function App() {
                     </p>
                 </footer>
             </div>
+
+            {/* Toast notifications — styled to match dark theme */}
+            < Toaster 
+                position="top-right"
+                theme="dark"
+                toastOptions={{
+                    duration: 6000,
+                    style: {
+                        background: '#111111',
+                        border: '1px solid rgba(255, 255, 255, 0.10)',
+                        color: '#f0f0f0',
+                        fontFamily: "'JetBrains Mono', monospace",
+                        fontSize: '0.75rem',
+                        letterSpacing: '0.04em',
+                    },
+                }}
+            />
         </div>
     )
 }

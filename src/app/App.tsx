@@ -39,7 +39,7 @@ export default function App() {
                 </main>
 
                 {/* Footer */}
-                <footer className="px-6 py-6 border-t border-white/[0.04]">
+                <footer className="px-6 py-6 border-t border-white/4">
                     <p className="font-mono text-[0.55rem] tracking-widest text-muted-foreground/30 text-center uppercase">
                         {
                             activeTab === 'stopwatch'
